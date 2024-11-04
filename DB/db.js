@@ -8,6 +8,8 @@ if (!process.env.DB_USER || !process.env.DB_HOST || !process.env.DB_NAME || !pro
   process.exit(1);  // Termina la aplicación si faltan variables
 }
 
+
+
 // Creamos la conexión con PostgreSQL
 const pool = new Pool({
   user: process.env.DB_USER,

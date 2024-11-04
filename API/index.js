@@ -1,11 +1,12 @@
 
-
 require('dotenv').config({ path: require('path').resolve(__dirname, '../.env') });
 const express = require('express');
 const cors = require('cors'); 
 const pool = require('../DB/db');
 const { v4: uuidv4 } = require('uuid');
 const app = express();
+
+
 
 app.use(cors()); 
 app.use(express.json());
